@@ -88,9 +88,9 @@ while (flag):
     # port2 = int(random.gauss(5000,50))
     # ip2=ip2+":"+port2
     dt = otime.isoformat()
-    rpt = round(random.random(), 6)
-    bpt = round(random.random(), 6)
-    rept = round(random.random(), 6)
+    rpt = round(random.random() * 10, 6)
+    bpt = round(random.random() * 10, 6)
+    rept = round(random.random() * 10, 6)
     vrb = numpy.random.choice(verb, p=[0.6, 0.1, 0.1, 0.2])
     uri = random.choice(resources)
     if uri.find("apps") > 0:
